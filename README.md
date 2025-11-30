@@ -80,8 +80,5 @@ all-in-one/
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
 
-## License
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## Contact
 For any questions or feedback, please contact the project maintainer.
