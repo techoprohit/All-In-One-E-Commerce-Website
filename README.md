@@ -1,5 +1,11 @@
 # All in One - E-commerce Website
 
+## Student Information:
+**Name:** Rohit
+**I'D:**  2024KUEC2068
+**Batch:** C3
+
+
 ## Description
 All in One is a static e-commerce website built using HTML, CSS, and JavaScript. It provides a complete shopping experience with features like product browsing, shopping cart, checkout, and user login. The website is designed to be responsive and user-friendly, offering a variety of products across different categories.
 
@@ -55,8 +61,6 @@ all-in-one/
 2. Open the `index.html` file in any modern web browser (Chrome, Firefox, Safari, etc.).
 3. Navigate through the website using the menu links.
 
-No server setup is required as this is a static website. All functionality runs client-side.
-
 ## Usage
 - **Browsing Products**: Visit the Products page to see all available items. Use filters to narrow down by category or price.
 - **Adding to Cart**: Click "Add to Cart" on any product to add it to your shopping cart.
@@ -66,7 +70,7 @@ No server setup is required as this is a static website. All functionality runs 
 
 ## Browser Compatibility
 - Chrome (recommended)
-- Firefox
+- Firefoxe
 - Safari
 - Edge
 
