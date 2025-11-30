@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One - Your Ultimate Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>All in One</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="header-right">
+                <div class="account">
+                    <a href="login.html" id="login-link">Login/Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <span class="cart-count" id="cart-count">0</span>
+                        🛒
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h2>Welcome to All in One</h2>
+                <p>Discover amazing products at unbeatable prices</p>
+                <a href="products.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h3>Shop by Category</h3>
+                <div class="category-grid">
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=200&h=150&fit=crop" alt="Electronics">
+                        <h4>Electronics</h4>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=200&h=150&fit=crop" alt="Clothing">
+                        <h4>Clothing</h4>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=200&h=150&fit=crop" alt="Home & Garden">
+                        <h4>Home & Garden</h4>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=200&h=150&fit=crop" alt="Books">
+                        <h4>Books</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h3>Featured Products</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="images/headphones.jpg" alt="Wireless Headphones" height="200">
+                        <h4>Wireless Headphones</h4>
+                        <p>₹999.99</p>
+                        <button class="btn add-to-cart" data-product-id="1">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/phone case.jpeg" alt="Smartphone Case" height="200">
+                        <h4>Smartphone case</h4>
+                        <p>₹169.99</p>
+                        <button class="btn add-to-cart" data-product-id="2">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/laptop_stand.jpg" alt="Laptop Stand" height="200">
+                        <h4>Laptop Stand</h4>
+                        <p>₹949.99</p>
+                        <button class="btn add-to-cart" data-product-id="3">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/speaker.webp" alt="Bluetooth Speaker" height="200">
+                        <h4>Bluetooth Speaker</h4>
+                        <p>₹759.99</p>
+                        <button class="btn add-to-cart" data-product-id="4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 All in One. All rights reserved.</p>
+            <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a> | <a href="#">Contact No. 108</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

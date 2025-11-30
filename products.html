@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - All in One</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>All in One</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="header-right">
+                <div class="account">
+                    <a href="#" id="login-link">Login/Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <span class="cart-count" id="cart-count">0</span>
+                        🛒
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="filters">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="books">Books</option>
+                    </select>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="0-50">₹0 - ₹50</option>
+                        <option value="50-100">₹50 - ₹100</option>
+                        <option value="100-200">₹100 - ₹200</option>
+                        <option value="200+">₹200+</option>
+                    </select>
+                </div>
+                <div class="product-grid" id="product-list">
+                    <!-- Products will be populated by JavaScript -->
+                    <div class="product-item" data-category="electronics" data-price="999.99">
+                        <img src="images/headphones.jpg" alt="Wireless Headphones" height="200">
+                        <h4>Wireless Headphones</h4>
+                        <p>₹999.99</p>
+                        <button class="btn add-to-cart" data-product-id="1">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="electronics" data-price="169.99">
+                        <img src="images/phone case.jpeg" alt="Smartphone" height="200">
+                        <h4>Smartphone case</h4>
+                        <p>₹169.99</p>
+                        <button class="btn add-to-cart" data-product-id="2">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="electronics" data-price="949.99">
+                        <img src="images/laptop_stand.jpg" alt="Laptop Stand" height="200">
+                        <h4>Laptop Stand</h4>
+                        <p>₹949.99</p>
+                        <button class="btn add-to-cart" data-product-id="3">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="electronics" data-price="759.99">
+                        <img src="images/speaker.webp" alt="Bluetooth Speaker" height="200">
+                        <h4>Bluetooth Speaker</h4>
+                        <p>₹759.99</p>
+                        <button class="btn add-to-cart" data-product-id="4">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="clothing" data-price="229.99">
+                        <img src="images/Men-stylish-T-Shirt-Navy-blue-White-Turquoise-Blue-with-Red-stripe-Airtex-64887927-_1.jpg" alt="T-Shirt" height="200">
+                        <h4>Cotton T-Shirt</h4>
+                        <p>₹229.99</p>
+                        <button class="btn add-to-cart" data-product-id="5">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="home" data-price="2339.99">
+                        <img src="images/Ceramic plant pot.jpeg" alt="Plant Pot" height="200">
+                        <h4>Ceramic Plant Pot</h4>
+                        <p>₹2339.99</p>
+                        <button class="btn add-to-cart" data-product-id="6">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="books" data-price="124.99">
+                        <img src="images/books.webp" alt="Book" height="200">
+                        <h4>Programming Guide</h4>
+                        <p>₹124.99</p>
+                        <button class="btn add-to-cart" data-product-id="7">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="electronics" data-price="49049">
+                        <img src="images/tablet.jpg" alt="Tablet" height="200">
+                        <h4>Android Tablet</h4>
+                        <p>₹49049</p>
+                        <button class="btn add-to-cart" data-product-id="8">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="home" data-price="500">
+                        <img src="images/painting.webp" alt="Painting" height="200">
+                        <h4>Painting</h4>
+                        <p>₹500</p>
+                        <button class="btn add-to-cart" data-product-id="9">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="home" data-price="650">
+                        <img src="images/anime posters.webp" alt="Anime Posters" height="200">
+                        <h4>Anime Posters</h4>
+                        <p>₹650</p>
+                        <button class="btn add-to-cart" data-product-id="10">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="electronics" data-price="6550">
+                        <img src="images/smart watch.jpg" alt="Smart Watch" height="200">
+                        <h4>Smart Watch</h4>
+                        <p>₹6550</p>
+                        <button class="btn add-to-cart" data-product-id="11">Add to Cart</button>
+                    </div>
+                    <div class="product-item" data-category="home" data-price="800">
+                        <img src="images/glasses.jpg" alt="Glasses" height="200">
+                        <h4>Glasses</h4>
+                        <p>₹800</p>
+                        <button class="btn add-to-cart" data-product-id="12">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 All in One. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - All in One</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>All in One</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="header-right">
+                <div class="account">
+                    <a href="#" id="login-link">Login/Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <span class="cart-count" id="cart-count">0</span>
+                        🛒
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <div class="product-images">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop" alt="Product Image" id="main-image">
+                        <div class="thumbnail-images">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=75&fit=crop" alt="Thumbnail 1" onclick="changeImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=100&h=75&fit=crop" alt="Thumbnail 2" onclick="changeImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=100&h=75&fit=crop" alt="Thumbnail 3" onclick="changeImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h2 id="product-name">Wireless Headphones</h2>
+                        <p class="price" id="product-price">₹99.99</p>
+                        <p id="product-description">High-quality wireless headphones with noise cancellation and long battery life. Perfect for music lovers and professionals.</p>
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" value="1" min="1">
+                        </div>
+                        <button class="btn add-to-cart" id="add-to-cart-btn" data-product-id="1">Add to Cart</button>
+                        <button class="btn buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 All in One. All rights reserved.</p>
+            <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

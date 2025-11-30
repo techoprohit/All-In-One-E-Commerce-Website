@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Details - All in One</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>All in One</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="details-section">
+            <div class="container">
+                <h2>Login Details</h2>
+                <div class="details-card">
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Password:</strong> <span id="password"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 All in One. All rights reserved.</p>
+            <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("email").innerText = localStorage.getItem("email") || "Not set";
+        document.getElementById("password").innerText = localStorage.getItem("password") || "Not set";
+    </script>
+</body>
+</html>

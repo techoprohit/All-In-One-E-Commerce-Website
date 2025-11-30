@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout - All in One</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>All in One</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." />
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="header-right">
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <span class="cart-count" id="cart-count">0</span>
+                        🛒
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+            <div class="container">
+                <h2>Checkout</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address:</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                            <option value="net-banking">Net Banking</option>
+                            <option value="cod">Cash on Delivery</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+                <div id="order-confirmation" style="display:none; margin-top:20px;">
+                    <h3>Thank you for your order!</h3>
+                    <p>Your order has been placed successfully.</p>
+
+                    <a href="index.html" class="btn">Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 All in One. All rights reserved.</p>
+            <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
